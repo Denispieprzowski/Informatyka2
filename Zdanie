@@ -1,0 +1,10 @@
+def sa_zgodne(a, n):
+	p = a / n
+	result = 0
+	for i in range(n):
+		result += p
+	return a == result
+
+a = int(input('podaj a: '))
+n = int(input('podaj n: '))
+print('sa zgodne' if sa_zgodne(a, n) else 'nie sa zgodne')
